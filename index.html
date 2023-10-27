@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg">
+          <label for="nev"></label>Teljes név: <input type="text" id="nev">
+        </div>
+        <div class="col-lg">
+          <label for="orszag"></label>Ország: <input type="text" id="orszag">
+        </div>
+        <div class="col-lg">
+          <label for="varos"></label>Város: <input type="text" id="varos">
+        </div>
+        <div class="col-lg">
+          <label for="address"></label>Utca, házszám: <input type="text" id="address">
+        </div>
+        <div class="col-lg">
+          <label for="iranyitoszam"></label>Irányítószám: <input type="number" id="iranyitoszam">
+        </div>
+        <div class="col-lg">
+          <label for="bszam"></label>Bankkártya szám: <input type="number" id="bszam">
+        </div>
+        <div class="col-lg">
+          <label for="ekod"></label>Ellenőrző kód: <input type="text" id="ekod">
+        </div>
+        <div class="col-lg">
+          <label for="bnev"></label>Bankkártyára írt név: <input type="text" id="bnev">
+        </div>
+        <div class="col-lg">
+          <br><button type="submit" id="fizetesgomb">Fizetés</button><br><p id="errormsg"></p>
+        </div>
+      </div>
+    </div>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
